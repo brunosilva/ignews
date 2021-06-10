@@ -12,9 +12,6 @@ interface HomeProps {
   }
 }
 export default function Home({ product }: HomeProps) {
-  
-  console.log(product);
-  
   return (
     <>
       <Head>
@@ -37,23 +34,22 @@ export default function Home({ product }: HomeProps) {
   )
 }
 
-export const getSererSideProps: GetServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const price = await stripe.prices.retrieve('price_1IuQQiIZOAX3sxZD7QvpoKub', {
     expand: ['product']
   })
   
   const product = {
     priceId: price.id,
-    amount: price.unit_amount,
+    amount: new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    }).format(price.unit_amount / 100),
   }
-  
-  console.log(price);
-  console.log(product);
 
   return {
     props:{
       product,
-    },
-    revalidate: 60 * 60 * 24,  //24 horas
+    }
   }
 }
