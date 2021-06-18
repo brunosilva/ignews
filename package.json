@@ -1,7 +1,7 @@
 {
   "name": "ignews",
   "version": "0.1.0",
-  "author": "https://www.linkedin.com/in/bruno-silva0109/",
+  "author": "brs.rsilva@gmail.com",
   "private": true,
   "scripts": {
     "dev": "next dev",
