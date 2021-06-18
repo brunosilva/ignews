@@ -1,4 +1,3 @@
-![issues](https://img.shields.io/github/issues/brunosilva/ignews)](https://github.com/brunosilva/ignews/issues)
 ![npm type definitions](https://img.shields.io/npm/types/chalk)
 ![version](https://img.shields.io/github/package-json/v/brunosilva/ignews)](https://github.com/brunosilva/ignews/blob/main/package.json)
 
