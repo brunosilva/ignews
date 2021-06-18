@@ -1,5 +1,5 @@
 ![npm type definitions](https://img.shields.io/npm/types/chalk)
-![version](https://img.shields.io/github/package-json/v/brunosilva/ignews)](https://github.com/brunosilva/ignews/blob/main/package.json)
+[![version](https://img.shields.io/github/package-json/v/brunosilva/ignews)](https://github.com/brunosilva/ignews/blob/main/package.json)
 
 
 ## Projeto igNews
